@@ -1,0 +1,29 @@
+ Heart Disease Prediction Using Logistic Regression
+
+
+1. Data Preprocessing:
+The dataset (Heart_Disease_Prediction.csv) is loaded into a Pandas DataFrame.
+Missing values are handled by dropping rows with any NaN values.
+Data visualization techniques like histograms are used to understand the distribution of features.
+The dataset is split into features (X) and target variable (y).
+Standardization (normalization) is applied to scale the features.
+
+
+2. Logistic Regression Model:
+Logistic regression is chosen as the predictive model.
+The model is trained on the training set (X_train, y_train) and then tested on the test set (X_test, y_test).
+The logistic regression model is instantiated using LogisticRegression() from scikit-learn and trained using fit().
+
+
+3. Model Evaluation:
+Accuracy of the model is calculated using accuracy_score.
+Confusion matrix and classification report are generated to evaluate the model's performance.
+Metrics such as sensitivity, specificity, positive predictive value, negative predictive value,
+positive likelihood ratio, and negative likelihood ratio are calculated.
+
+
+4. Insights:
+Model coefficients (or weights) are not explicitly examined in your code. However,
+understanding the coefficients can provide insights into feature importance.
+Feature importance can be inferred from the magnitude and sign of the coefficients.
+Features with higher absolute coefficients contribute more to the prediction.
